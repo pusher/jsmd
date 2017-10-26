@@ -1,0 +1,16 @@
+#md, #js {
+  width: calc(50% - 21px);
+  min-height: 100vh;
+  margin: 0;
+  padding: 10px;
+}
+
+#md {
+  float: left;
+  border-right: 1px solid #CDCDCD;
+}
+
+#js {
+  float: right;
+  border-left: 1px solid rgba(0,0,0,0);
+}
