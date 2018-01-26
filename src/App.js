@@ -49,11 +49,11 @@ class App extends Component {
     }
 
     renderer.list = (body, ordered) => {
-      return `\n<Ul>\n${body}\n</Ul>`;
+      return `\n<List>\n${body}\n</List>`;
     }
 
     renderer.listitem = (text) => {
-      return `<Li>\n${text}\n</Li>`;
+      return `<Item>\n${text}\n</Item>`;
     }
 
     renderer.paragraph = (text) => {
