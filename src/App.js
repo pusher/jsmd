@@ -45,11 +45,11 @@ class App extends Component {
     }
 
     renderer.code = (code, language) => {
-      return `\n\n<Code language="${language}">\n  const copyMeOut = \`${code}\`;\n  \{copyMeOut\}\n</Code>\n`;
+      return `\n\n<Code language="${language}">\n  \{\`\n${code}\n  \`\}\n</Code>\n`;
     }
 
     renderer.list = (body, ordered) => {
-      return `\n<List>\n${body}\n</List>`;
+      return `\n<List>\n${body}\n</List>\n`;
     }
 
     renderer.listitem = (text) => {
@@ -111,7 +111,6 @@ class App extends Component {
 
 export default App;
 
-
 class JSMDEditor extends Component {
 
   constructor(props) {
@@ -150,5 +149,3 @@ class JSMDEditor extends Component {
     );
   }
 }
-
-
